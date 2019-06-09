@@ -82,7 +82,7 @@ id_to_word, word_to_id = get_vectors(clean_text)
 bigram_corr = generate_bigram_corr(clean_text, word_to_id)
 
 HIDDEN_SIZE = 64
-INPUT_VEC_SIZE = len(word_to_id) * 2
+INPUT_VEC_SIZE = len(word_to_id)
 OUTPUT_VECTOR_SIZE = len(word_to_id)
 
 W = m.add_parameters((HIDDEN_SIZE, INPUT_VEC_SIZE))
